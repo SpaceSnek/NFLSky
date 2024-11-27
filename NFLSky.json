@@ -1,0 +1,56 @@
+{
+    "displayName": "NFLSky",
+    "blocks": [
+        {
+            "id": "aaag3qurnado2",
+            "type": "input",
+            "inputType": "firehose",
+            "firehoseSeconds": 10800
+        },
+        {
+            "type": "input",
+            "inputType": "tags",
+            "id": "aaag3tetyaxoo",
+            "historySeconds": 43200,
+            "listUri": "",
+            "tags": [
+                "football",
+                "nfl",
+                "tnf",
+                "snf",
+                "mnf",
+                "nflmemes"
+            ]
+        },
+        {
+            "type": "remove",
+            "subject": "item",
+            "value": "has_labels",
+            "id": "aaag3riwh4q5q"
+        },
+        {
+            "id": "aaag3qurnbonc",
+            "type": "regex",
+            "value": "\\b(Arizona Cardinals|Atlanta Falcons|Baltimore Ravens|Buffalo Bills|Carolina Panthers|Chicago Bears|Cincinnati Bengals|Cleveland Browns|Dallas Cowboys|Denver Broncos|Detroit Lions|Green Bay Packers|Houston Texans|Indianapolis Colts|Jacksonville Jaguars|Kansas City Chiefs|Las Vegas Raiders|Los Angeles Chargers|Los Angeles Rams|Miami Dolphins|Minnesota Vikings|New England Patriots|New Orleans Saints|New York Giants|New York Jets|Philadelphia Eagles|Pittsburgh Steelers|San Francisco 49ers|Seattle Seahawks|Tampa Bay Buccaneers|Tennessee Titans|Washington Commanders|NFL|TNF|SNF|MNF|Scorigami|Fantasy Football)\\b",
+            "caseSensitive": false
+        },
+        {
+            "type": "remove",
+            "subject": "duplicates",
+            "value": null,
+            "id": "aaag3t4i5boqg"
+        },
+        {
+            "type": "sort",
+            "sortType": "hn",
+            "id": "aaag3sqgqbtjo",
+            "gravity": "1.8"
+        },
+        {
+            "type": "sort",
+            "sortType": "likes",
+            "id": "aaag3svftumxk"
+        }
+    ],
+    "license": "EUPL-1.2"
+}
