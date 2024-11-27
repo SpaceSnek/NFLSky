@@ -22,3 +22,5 @@ To get on this feed, you can include any of the following:
 - mnf
 - nflmemes
 
+
+Have a suggestion? Reach out to me on Blue Sky at (spacesnek.shrimplybetter.me)[https://bsky.app/profile/spacesnek.shrimplybetter.me]
